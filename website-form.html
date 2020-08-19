@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website Forms</title>
+        <link rel="stylesheet" type="text/css" href="website-form.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div id="container">
+            <form id="survey-form">
+            <h1>Application to Date My Daughter</h1>
+            <p><b>Note:</b> Form is to be completed 21 days prior to date</p>
+
+                <fieldset id="personal-details">
+                        <legend>Personal Details</legend>
+                        <!--- name component-->
+                            <div>
+                                <label id="name-label" for="name">Name:</label>
+                                <input id="name" name="user-name" type="text" placeholder="Enter your name" required>
+                            </div>
+                        <!-- address component-->
+                            <div>
+                                <label for="address">Address:</label>
+                                <input id="address" name="Address" type="Address" placeholder="Enter your address" required>
+                            </div>
+                            <!--- email component-->
+                            <div>
+                                <label id="email-label" for="email">Email:</label>
+                                <input id="email" name="user-email" type="email" placeholder="Enter your email" required>
+                            </div>
+                            <!--- phone number component-->
+                            <div>
+                                <label id="phone-label" for="phone">Phone:</label>
+                                <input id="phone" name="user-phone" type="number" placeholder="Enter 10 digit phone number" min=1 max=10>
+                            </div>
+                            <!--- IQ component-->
+                            <div>
+                                <label id="iq-label" for="iq">Name:</label>
+                                <input id="iq" name="user-iq" type="number" placeholder="Enter your IQ here" required>
+                            </div>
+                            <!--- Gender component-->
+                            <div>
+                                <label for="gender">Gender:</label><br>
+                                <p>
+                                <input name="gender" value="male" type="radio" checked>Male <br>
+                                <input name="gender" value="female" type="radio">Female<br>
+                                <input name="gender" value="other" type="radio">Other<br>
+                                </p>
+                            </div>
+                            <!--- date of outing component-->
+                            <div>
+                                <label for="date-label">Date of Proposed Outing:</label>
+                                <input name="bday" type="date" required>
+                            </div>  
+                            
+                    </fieldset>
+
+                    <!-- Checkboxes component-->
+                    <fieldset>
+                        <label for="#">Check All That Apply:</label>
+                        <p>
+                        <input type="checkbox" name="tattoo" value="tattoo">I have tattoos and/or piercings<br>
+                        <input type="checkbox" name="age" value="age">I am more than 2 years older than your daughter<br>
+                        <input type="checkbox" name="car" value="car">I own a panel van or V8 ute<br>
+                        <input type="checkbox" name="full-time" value="full-time" checked>I work full-time<br>
+                        <input type="checkbox" name="parents" value="parents" checked>My parents are rich<br>
+                        <input type="checkbox" name="location" value="location" checked>The date is in a well lit public location<br>
+                        </p>
+                    </fieldset>
+
+                    <!-- Politics components -->
+                    <fieldset>
+                        <div>
+                            <label for="politics">Political Persuasion:</label>
+                            <select id="dropdown">
+                                <option value="left">Left Wing</option>
+                                <option value="right">Right Wing</option>
+                                <option value="conservative">Conservative</option>
+                                <option value="nazi">Nazi</option>
+                            </select>
+                            <label for="education">Educational Level:</label>
+                            <select id="dropdown2">
+                                <option value="university">University</option>
+                                <option value="college">College</option>
+                                <option value="high">High School</option>
+                                <option value="none">None</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <!-- Essay component-->
+                    <fieldset>
+                        <legend>Essay Portion</legend>
+                        <div>
+                            <label for="msg"></label>
+                            <p>In 50 words or more explain why you want to date my daughter</p>
+                            <textarea id="msg" name="user_message" rows=4 cols=50 placeholder="Enter text here"></textarea>
+                        </div>
+                        <div>
+                            <label for="msg2"></label>
+                            <p>Please upload contact details for 2 references</p>
+                            <textarea id="msg2" name="user_message" rows=4 cols=50 placeholder="Enter text here"></textarea>
+                        </div>
+                        <p>Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:<br>
+                            <button>Attach File</button>
+                        </p>
+                    </fieldset>
+                    <div id="submitbutton"
+                        <button type="submit" id="submit">Submit your Application</button>
+                    </div>
+            </form>
+        </div>
+        </form
+
+
+
+    </body>
+</html>
